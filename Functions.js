@@ -73,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.my-world').style.display = 'inline';
         document.querySelector('.my-world').style.transform = 'ease-in-out';
     
+        document.getElementById("audio").play();
+        
         if (!rainingHeartsStarted) {
             rainingHeartsStarted = true;
             setInterval(createHeart, 300);
