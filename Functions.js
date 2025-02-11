@@ -77,15 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
             rainingHeartsStarted = true;
             setInterval(createHeart, 300);
         }
-    
+
         // Keep the letter size fixed
         let letter = document.querySelector('.letter');
         let letterWidth = letter.clientWidth;
         let letterHeight = letter.clientHeight;
-    
         letter.style.width = `${letterWidth}px`;
         letter.style.height = `${letterHeight}px`;
-    
+
         // ✅ Remove the existing image permanently
         let img = document.querySelector('.img');
         if (img) {
