@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Envelope</title>
+
+</head>
+
+<body>
+    <!-- <div class = "heart"></div> -->
+
+    <div class="open-me" style="text-align: center; margin-bottom: 10px; font-size: 30px;">
+        Open Me!
+    </div>
+
+    <div class="love-you" style="text-align: center; margin-bottom: 10px; font-size: 20px;"
+        style="display: none; font-weight: bolder !important;">
+        I Love You!
+    </div>
+
+    <div class="wrapper" style="display: flex;">
+        <div class="lid one"></div>
+        <div class="lid two"></div>
+        <div class="envelope" style="display: flex;"></div>
+        <div class="letter">
+            <p style="font-weight: bolder !important;">Will you be my Valentine?</p>
+            <img class="img" src="CancunKiss.jpeg" alt="Heart" style="display: none;">
+
+
+            <div class="newButtons" style="display: none;">
+                <button class="yes" id="yes">Yes</button>
+                <button class="no" id="no">No</button>
+            </div>
+
+            <div id="lottieContainer" style="display: none; justify-content: center; align-items: center;">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/32f06d2d-3c1a-4342-81f4-738be3287d65/xIqqqw8Vf0.lottie"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </dotlottie-player>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="my-world" style="text-align: center; margin-bottom: 10px; font-size: 20px;"
+        style="display: none; font-weight: bolder !important;">
+        You're My World 🌎
+    </div>
+
+    <script type="text/javascript" src="Functions.js"></script>
+</body>
+
+</html>
