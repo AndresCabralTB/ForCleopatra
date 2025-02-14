@@ -27,7 +27,7 @@
         <div class="envelope" style="display: flex;"></div>
         <div class="letter">
             <p style="font-weight: bolder !important;">Will you be my Valentine?</p>
-            <img class="img" src="CancunKiss.jpeg" alt="Heart" style="display: none;">
+            <img class="img" src="Image/CancunKiss.jpeg" alt="Heart" style="display: none;">
 
 
             <div class="newButtons" style="display: none;">
@@ -39,12 +39,15 @@
                 <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
                     type="module"></script>
                 <dotlottie-player src="https://lottie.host/32f06d2d-3c1a-4342-81f4-738be3287d65/xIqqqw8Vf0.lottie"
-                    background="transparent" speed="1" style="width: 270px; height: 300px;" loop autoplay>
+                    background="transparent" speed="1" style="width: 270px; height: 200px;" loop autoplay>
                 </dotlottie-player>
             </div>
 
+            <button class="show-playlist" id="Show Playlist" display= "none; "     onclick="window.open('https://open.spotify.com/playlist/3l9pn5BpmP919AVphzbSaA', '_blank')">Music for you</button>
+
         </div>
     </div>
+
 
     <div class="my-world" style="text-align: center; margin-bottom: 10px; font-size: 20px;"
         style="display: none; font-weight: bolder !important;">
@@ -57,6 +60,17 @@
     
 
     <script type="text/javascript" src="Functions.js"></script>
+    <script>
+        const audio = document.getElementById("audio");
+
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                audio.pause(); // Stop the music when the tab is inactive
+            } else {
+                audio.play().catch(error => console.log("Playback prevented:", error)); // Resume (optional)
+            }
+        });
+    </script>
 </body>
 
 </html>
