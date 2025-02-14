@@ -359,10 +359,10 @@ body {
 
 .heartNew {
     position: fixed;
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: -2vh;
     transform: translateY(0);
-    animation: fall 3s linear forwards;
+    animation: fall 6s linear forwards;
     z-index: 0;
 }
 

@@ -253,7 +253,7 @@ const style = document.createElement('style');
 style.innerHTML = `
     .floating-image {
         position: absolute;
-        width: 150px;
+        width:80px;
         height: auto;
         transition: tranform 6s linear, opacity 6s ease-in-out;
     }
@@ -262,7 +262,7 @@ style.innerHTML = `
         top: 0;
         left: 0;
         width: 200vw;
-        height: 500vh;
+        height: 800vh;
         display: flex;
         justify-content: center;
         align-items: center;
